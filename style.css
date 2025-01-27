@@ -30,7 +30,7 @@ body{
 main{
     background: #000;
     width: 100%;
-    height: 1000px;
+    height: 2000px;
     margin-top: 2em;
 }
 .start-section{
@@ -46,12 +46,14 @@ main{
     width: 40%;
     height: 600px;
     background: #FFE;
+    text-align: center;
     margin-top: 4em;
 }
 .desc-section{
     width: 40%;
     height: 600px;
     background: #ffA;
+    text-align: center;
     margin-top: 4em;
 
 }
@@ -61,4 +63,16 @@ main{
     margin-right: auto;
     height: 100px;
     width: 100px;
+}
+.second-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.second-section > div{
+    width: auto;
+    margin: 1em;
+    height: 200px;
+    background: #FFF;
+    text-align: center;
 }

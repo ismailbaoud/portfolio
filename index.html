@@ -3,70 +3,202 @@
   <head>
     <meta charset="UTF-16" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>ISMAIL BAOUD</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- simple nav-bar for my profile -->
     <nav id="nav-bar">
       <div>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+        <a href="#">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#techs">Technologies</a>
       </div>
     </nav>
-    <main>
-      <!-- the section of foto and description about me -->
-      <div class="start-section">
-            <div class="foto-section">pic</div>
-            <div class="desc-section">text</div>
-        </div>
-      <!-- the animation for say to the user he can scrolling to find more details-->
-      <div class="scrolle-btn"></div>
-      <!-- the section of my projects -->
-      <div class="second-section">
-            <div>video</div>
-            <div>video</div>
-            <div>video</div>
-            <div>video</div>
-        </div>
-      <!--the section of my technologies-->
-      <div class="thired-section">
-        <h3>the first category</h3>
-        <div>
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
-            <span>7</span>
-        </div>
-        <h3>the second category</h3>
 
-        <div>
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
-            <span>7</span>
-        </div>
-        <h3>the thired category</h3>
-
-        <div>
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
-            <span>7</span>
-        </div>
+    <div class="start-section">
+      <div class="desc-section">
+        <span class="hacker-text">
+          > Hello, World!<br><br>
+          > I'm Ismail Baoud, a 20-year-old full-stack developer.<br><br>
+          > I love coding and am passionate about cybersecurity and ethical hacking.<br><br>
+          > I'm a junior in this field, eager to learn and grow.<br><br>
+          > Welcome to my portfolio.<br><br>
+          > Scroll down to explore my projects and skills.<br>
+      </span>
+      
+      
+        
       </div>
-       <!-- the animation for say to the user he can scrolling to find more details-->
-       <div class="scrolle-btn"></div>
-    </main>
+      <div class="foto-section">
+        <img class="foto" src="ismailbaoud.png" />
+      </div>
+    </div>
+
+    <div id="projects" class="second-section">
+      <h3 class="hacker-heading">> PROJECT 1</h3>
+      <p class="hacker-text">
+        > Plateforme de Cours en Ligne Youdemy 🎓<br>
+        > Application web interactive et personnalisée pour les étudiants et enseignants.<br><br>
+    
+        > 📌 Fonctionnalités Requises:<br>
+        > Partie Front Office:<br>
+        > - Visiteur :<br>
+        >   - Accès au catalogue des cours avec pagination 📚<br>
+        >   - Recherche de cours par mots-clés 🔍<br>
+        >   - Création d’un compte avec choix du rôle (Étudiant ou Enseignant) 🧑‍🎓<br><br>
+    
+        > - Étudiant :<br>
+        >   - Visualisation du catalogue des cours 🎓<br>
+        >   - Recherche et consultation des détails des cours (description, contenu, enseignant, etc.) 📖<br>
+        >   - Inscription à un cours après authentification 📝<br>
+        >   - Accès à une section “Mes cours” regroupant les cours rejoints 📑<br><br>
+    
+        > - Enseignant :<br>
+        >   - Ajout de nouveaux cours avec détails (Titre, description, contenu, tags, catégorie) 📹📝<br>
+        >   - Gestion des cours : modification, suppression, consultation des inscriptions 🛠️<br>
+        >   - Accès à une section “Statistiques” sur les cours 📊<br><br>
+    
+        > Partie Back Office:<br>
+        > - Administrateur :<br>
+        >   - Validation des comptes enseignants ✅<br>
+        >   - Gestion des utilisateurs (activation, suspension, suppression) ⚙️<br>
+        >   - Gestion des contenus (cours, catégories, tags) 🏷️<br>
+        >   - Insertion en masse de tags pour gagner en efficacité 🏃<br>
+        >   - Accès à des statistiques globales :<br>
+        >     - Nombre total de cours 📈<br>
+        >     - Répartition par catégorie 📂<br>
+        >     - Cours avec le plus d’étudiants 🏆<br>
+        >     - Top 3 des enseignants 🥇<br><br>
+    
+        > Fonctionnalités Transversales:<br>
+        > - Un cours peut contenir plusieurs tags (relation many-to-many) 🔗<br>
+        > - Application du polymorphisme dans les méthodes : Ajouter cours et afficher cours 🔄<br>
+        > - Système d’authentification et d’autorisation pour protéger les routes sensibles 🔐<br>
+        > - Contrôle d’accès selon le rôle de l’utilisateur 🚷<br><br>
+    
+        > 📌 Exigences Techniques:<br>
+        > - Respect des principes OOP (encapsulation, héritage, polymorphisme) 🧑‍💻<br>
+        > - Base de données relationnelle avec gestion des relations (one-to-many, many-to-many) 🗄️<br>
+        > - Utilisation des sessions PHP pour la gestion des utilisateurs connectés 🔑<br>
+        > - Système de validation des données utilisateur pour garantir la sécurité 🔒<br>
+    </p>
+    
+      <video class="video" controls autoplay muted>
+        <source class="video" src="v2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <h3 class="hacker-heading">> PROJECT 2</h3>
+      <p class="hacker-text">
+        > Système de Gestion des Rendez-vous Dentaires 🦷<br>
+        > Application web permettant aux patients de prendre rendez-vous en ligne et aux dentistes de gérer leur planning.<br><br>
+    
+        > 📌 Fonctionnalités Principales:<br>
+        > - Création et gestion de compte sécurisé 🛡️<br>
+        > - Prise de rendez-vous en ligne 📅<br>
+        > - Historique des rendez-vous 📜<br>
+        > - Modification/annulation des rendez-vous ✏️<br>
+        > - Notifications par email 📩<br>
+        > - Gestion des disponibilités et validation des comptes patients ✅<br>
+        > - Tableau de bord administrateur avec statistiques 📊<br>
+        > - Génération de rapports PDF 📝<br><br>
+    
+        > 🔧 Prérequis Techniques:<br>
+        > - PHP 8.0+, MySQL 5.7+, Composer ⚙️<br>
+        > - Node.js & NPM pour les dépendances front-end 🌐<br>
+        > - Serveur web (Apache/Nginx) 🖥️<br><br>
+    </p>
+    
+      <video class="video" controls>
+        <source class="video" src="v3.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+<div id="techs">
+  <div class="thired-section">
+    <h3 class="hacker-heading">> FRONT END</h3>
+    <div>
+      <span class="hacker-tech">HTML 5</span>
+      <span class="hacker-tech">CSS 3</span>
+      <span class="hacker-tech">JS</span>
+      <span class="hacker-tech">Tailwind CSS</span>
+      <span class="hacker-tech">Bootstrap CSS</span>
+      <span class="hacker-tech">Materialize CSS</span>
+      <span class="hacker-tech">jQuery</span>
+      <span class="hacker-tech">GSAP</span>
+      <span class="hacker-tech">Chart.js</span>
+    </div>
+  
+    <h3 class="hacker-heading">> BACK END</h3>
+    <div>
+      <span class="hacker-tech">PHP</span>
+      <span class="hacker-tech">C</span>
+      <span class="hacker-tech">Laravel PHP</span>
+    </div>
+  
+    <h3 class="hacker-heading">> DATABASES</h3>
+    <div>
+      <span class="hacker-tech">MySQL</span>
+      <span class="hacker-tech">PostgreSQL</span>
+    </div>
+  
+    <h3 class="hacker-heading">> TOOLS</h3>
+    <div>
+      <span class="hacker-tech">Git</span>
+      <span class="hacker-tech">GitHub</span>
+      <span class="hacker-tech">Jira</span>
+      <span class="hacker-tech">Trello</span>
+      <span class="hacker-tech">VS Code</span>
+      <span class="hacker-tech">PHP Storm</span>
+      <span class="hacker-tech">XAMPP</span>
+      <span class="hacker-tech">Laragon</span>
+    </div>
+  </div>
+  
+    </div>
+<section id="contact">
+  <div class="contact-container">
+    <h2>Contact With Me</h2>
+    <p>Feel free to reach out if you have any questions or just want to say hello!</p>
+    <form action="#" method="POST" class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Your name">
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Your email address">
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required placeholder="Your message"></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+<section id="contact-info">
+  <div class="contact-info-container">
+    <h2>My Contact Info</h2>
+    <ul>
+      <li>
+        <strong>Phone:</strong> 
+        <a href="tel:+1234567890">+212708512342</a>
+      </li>
+      <li>
+        <strong>Email:</strong> 
+        <a href="mailto:youremail@example.com">ibaoud46@gmail.com</a>
+      </li>
+      <li>
+        <strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/ismail-baoud-b39aa1335/" target="_blank">LinkedIn Profile</a>
+      </li>
+      <li>
+        <strong>GitHub:</strong> 
+        <a href="https://www.github.com/ismailbaoud" target="_blank">GitHub Profile</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+    <script src="script.js"></script>
   </body>
 </html>

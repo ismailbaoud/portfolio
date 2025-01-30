@@ -1,101 +1,320 @@
-body{
+body {
     margin: 2%;
-    
+    background-color: #000;
+    color: limegreen;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
 }
-#nav-bar{
-    width: auto;
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    width: 100%;
     height: 6em;
-    background: #7E7E7E;
     display: flex;
     align-items: center;
+    border-bottom: 2px solid limegreen;
+    background-color: #000;
+    z-index: 100;
 }
-#nav-bar > div{
+
+#nav-bar > div {
     width: 100%;
     height: 4em;
     margin: 1%;
-    background: #7F9799;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
 }
-#nav-bar > div >a{
+
+#nav-bar > div > a {
     padding: 10px;
-    width: 100%;
-    text-align: center;
-    background: #000;
-    margin: 50px;
+    text-decoration: none;
+    color: limegreen;
+    font-size: larger;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: color 0.3s;
 }
-main{
-    background: #000;
-    width: 100%;
-    height: 3000px;
-    margin-top: 2em;
+
+#nav-bar > div > a:hover {
+    color: #0f0;
 }
-.start-section{
+
+.start-section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     margin: 2em;
-    
+    margin-bottom: 6.5em;
 }
-.foto-section{
-    width: 40%;
-    height: 600px;
-    background: #FFE;
-    text-align: center;
-    margin-top: 4em;
-}
-.desc-section{
-    width: 40%;
-    height: 600px;
-    background: #ffA;
-    text-align: center;
-    margin-top: 4em;
 
+.foto-section {
+    width: 30%;
+    height: auto;
+    text-align: center;
+    margin-top: 4em;
+    border: 2px solid limegreen;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px limegreen;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
-.scrolle-btn{
-    background: #FFF;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
-    width: 100px;
+
+.foto-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px limegreen;
 }
-.second-section{
+
+.foto {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%) brightness(1.2);
+    transition: filter 0.3s;
+}
+
+.foto:hover {
+    filter: grayscale(0%) brightness(1);
+}
+
+.desc-section {
+    width: 40%;
+    height: 600px;
+    text-align: left;
+    margin-top: 4em;
+    font-size: x-large;
+    color: limegreen;
+}
+
+.hacker-text {
+    display: block;
+    animation: blink 0.5s 2;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.second-section {
     display: grid;
     grid-template-columns: 1fr;
-    
+    margin: 2em;
 }
-.second-section > div{
-    width: auto;
-    margin: 1em;
-    height: 200px;
-    background: #FFF;
-    text-align: center;
-    
+
+.second-section h3 {
+    color: limegreen;
+    font-size: 2em;
+    margin-bottom: 1em;
 }
-.thired-section{
-    color: #FFF;
+
+.second-section p {
+    color: limegreen;
+    font-size: 1.2em;
+    margin-bottom: 1em;
 }
-.thired-section > div{
+
+.video {
+    width: 100%;
+    height: 70%;
+    border: 2px solid limegreen;
+}
+
+.thired-section {
+    margin: 2em;
+}
+
+.thired-section h3 {
+    color: limegreen;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.thired-section > div {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(6,1fr);
-    color: white;
-    
-   
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1em;
 }
-.thired-section > div > span{
-    background: #F0F;
+
+.hacker-tech {
+    background: #111;
     margin: 0.5em;
     text-align: center;
     height: 3em;
-}
-h3{
-    width: 100%;
+    border-radius: 5px;
+    color: limegreen;
+    font-size: larger;
+    font-weight: 700;
     display: flex;
     justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    border: 1px solid limegreen;
+    transition: background 0.3s, color 0.3s;
+}
+
+.hacker-tech:hover {
+    background: limegreen;
+    color: #000;
+}
+
+#contact {
+    background-color: #000;
+    color: limegreen;
+    padding: 3em 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#contact .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+    border: 2px solid limegreen;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+#contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact .contact-form label {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    background-color: #111;
+    border: 2px solid limegreen;
+    color: limegreen;
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+#contact .contact-form button {
+    background-color: limegreen;
+    color: #000;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact .contact-form button:hover {
+    background-color: #0f0;
+}
+
+#contact-info {
+    background-color: #000;
+    color: limegreen;
+    padding: 3em 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#contact-info .contact-info-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+    border: 2px solid limegreen;
+    border-radius: 10px;
+}
+
+#contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact-info li {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+#contact-info a {
+    color: limegreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact-info a:hover {
+    color: #0f0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .start-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto-section {
+        width: 60%;
+    }
+
+    .desc-section {
+        width: 80%;
+        font-size: large;
+    }
+
+    .second-section {
+        grid-template-columns: 1fr;
+    }
+
+    .thired-section > div {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 90%;
+    }
+
+    .contact-info-container {
+        padding: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .foto-section {
+        width: 80%;
+    }
+
+    .desc-section {
+        width: 90%;
+        font-size: medium;
+    }
+
+    .hacker-tech {
+        font-size: medium;
+    }
+
+    .video {
+        height: 50%;
+    }
 }
